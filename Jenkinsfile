@@ -1,10 +1,10 @@
-def registry = 'https://valaxy02.jfrog.io'
-def imageName = 'valaxy02.jfrog.io/nodejs-docker/demo-nodejs'
+def registry = 'https://rojajfrog.jfrog.io/'
+def imageName = 'rojajfrog.jfrog.io//nodejs-docker/demo-nodejsr'
 def version   = '1.0.2'
 pipeline{
     agent {
         node {
-            label "valaxy"
+            label "slavegroup"
         }
     }
     tools {nodejs 'nodejs-16'}
