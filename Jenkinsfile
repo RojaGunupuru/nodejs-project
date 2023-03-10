@@ -7,7 +7,7 @@ pipeline{
             label "slavegroup"
         }
     }
-    tools {nodejs 'nodejs-16'}
+    tools {nodejs 'node-js'}
 
     stages {
         stage('build') {
