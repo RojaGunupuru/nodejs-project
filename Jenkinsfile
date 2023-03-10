@@ -40,7 +40,7 @@ stage(" Docker Build ") {
       steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
-               docker.withRegistry(registry, 'test'){
+               docker.withRegistry(registry, 'nodejs'){
                   app.push()
                }    
                echo '<--------------- Docker Publish Ended --------------->'  
